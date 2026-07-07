@@ -1,0 +1,7 @@
+title: "情報系研究室"
+description: "Jekyll and Bootstrap prototype for a laboratory website."
+baseurl: ""
+url: ""
+
+exclude:
+  - README.md

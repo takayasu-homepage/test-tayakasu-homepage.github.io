@@ -1,0 +1,185 @@
+---
+layout: null
+title: 情報系研究室
+---
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4 px-xl-5">
+          <a class="navbar-brand lab-brand" href="#">高安研究室</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#globalNav" aria-controls="globalNav" aria-expanded="false" aria-label="メニューを開く">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="globalNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+              <li class="nav-item"><a class="nav-link" href="#">トップ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">研究室紹介</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">メンバー</a></li>
+              <li class="nav-item dropdown hover-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">研究内容</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">選択肢 A</a></li>
+                  <li><a class="dropdown-item" href="#">選択肢 B</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">業績</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">アクセス</a></li>
+              <li class="nav-item ms-lg-3"><a class="nav-link contact-link" href="#">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="4200">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1800&q=80" class="d-block w-100 h-100" alt="コードが表示された画面">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1800&q=80" class="d-block w-100 h-100" alt="サーバールーム">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1800&q=80" class="d-block w-100 h-100" alt="研究ミーティング">
+            </div>
+          </div>
+        </div>
+        <div class="hero-message">
+          <p class="eyebrow">Information Science Laboratory</p>
+          <h1>中央メッセージを配置するスペース</h1>
+          <p>研究室の理念やキャッチコピーをここに入れます。</p>
+        </div>
+      </section>
+
+      <section class="intro-section section-band">
+        <div class="container-xl">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" class="intro-image" alt="研究室で作業する学生">
+            </div>
+            <div class="col-lg-6">
+              <div class="message-block">
+                <p class="section-label">About</p>
+                <h2>写真の右側にメッセージを書くスペース</h2>
+                <p>研究室紹介、教育方針、研究テーマの概要などを配置する想定のテキストエリアです。あとから文章を差し替えられるよう、余白を広めにしています。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="research-section section-band">
+        <div class="container-xl">
+          <div class="section-heading">
+            <p class="section-label">Research Fields</p>
+            <h2>研究</h2>
+          </div>
+          <div class="research-grid">
+            <article class="research-item">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="研究テーマ画像">
+              <div>
+                <h3>研究テーマ 01</h3>
+                <p>写真下の説明文スペースです。</p>
+              </div>
+            </article>
+            <article class="research-item">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="研究テーマ画像">
+              <div>
+                <h3>研究テーマ 02</h3>
+                <p>写真下の説明文スペースです。</p>
+              </div>
+            </article>
+            <article class="research-item">
+              <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80" alt="研究テーマ画像">
+              <div>
+                <h3>研究テーマ 03</h3>
+                <p>写真下の説明文スペースです。</p>
+              </div>
+            </article>
+            <article class="research-item">
+              <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&q=80" alt="研究テーマ画像">
+              <div>
+                <h3>研究テーマ 04</h3>
+                <p>写真下の説明文スペースです。</p>
+              </div>
+            </article>
+            <article class="research-item">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="研究テーマ画像">
+              <div>
+                <h3>研究テーマ 05</h3>
+                <p>写真下の説明文スペースです。</p>
+              </div>
+            </article>
+            <article class="research-item">
+              <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=800&q=80" alt="研究テーマ画像">
+              <div>
+                <h3>研究テーマ 06</h3>
+                <p>写真下の説明文スペースです。</p>
+              </div>
+            </article>
+            <article class="research-item">
+              <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80" alt="研究テーマ画像">
+              <div>
+                <h3>研究テーマ 07</h3>
+                <p>写真下の説明文スペースです。</p>
+              </div>
+            </article>
+            <article class="research-item">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="研究テーマ画像">
+              <div>
+                <h3>研究テーマ 08</h3>
+                <p>写真下の説明文スペースです。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="news-section section-band">
+        <div class="container-xl">
+          <div class="section-heading">
+            <p class="section-label">Latest Updates</p>
+            <h2>NEWS</h2>
+          </div>
+          <div class="news-box" aria-live="polite">
+            <div id="newsList" class="news-list">
+              <p class="news-loading">NEWSを読み込み中です。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-xl">
+        <ul class="footer-nav">
+          <li><a href="#">トップ</a></li>
+          <li><a href="#">研究室紹介</a></li>
+          <li><a href="#">メンバー</a></li>
+          <li><a href="#">研究内容</a></li>
+          <li><a href="#">業績</a></li>
+          <li><a href="#">アクセス</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+        <p class="footer-lab-name">高安研究室</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/news.js"></script>
+  </body>
+</html>
