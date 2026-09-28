@@ -1,0 +1,63 @@
+---
+layout: default
+title: 研究業績
+nav: results
+styles:
+  - /assets/css/results.css
+scripts:
+  - /assets/js/results.js
+---
+<main class="results-page" id="pageTop">
+  <section class="page-hero section-band">
+    <div class="container-xl">
+      <p class="section-label">Research Achievements</p>
+      <h1 class="page-title">研究業績</h1>
+      <p class="page-lead">論文・学会発表・メディア掲載・研究交流の記録</p>
+    </div>
+  </section>
+
+  <section class="results-section">
+    <div class="container-xl">
+      <div class="results-tabs" role="tablist" aria-label="業績の分類">
+        <button type="button" id="tab-publications" role="tab" aria-selected="true" aria-controls="resultsPanel" data-category="publications">論文</button>
+        <button type="button" id="tab-conferences" role="tab" aria-selected="false" aria-controls="resultsPanel" tabindex="-1" data-category="conferences">招待講演・学会発表</button>
+        <button type="button" id="tab-media" role="tab" aria-selected="false" aria-controls="resultsPanel" tabindex="-1" data-category="media">メディア掲載・その他</button>
+        <button type="button" id="tab-visitors" role="tab" aria-selected="false" aria-controls="resultsPanel" tabindex="-1" data-category="visitors">研究来訪者</button>
+      </div>
+
+      <div id="resultsPanel" role="tabpanel" aria-labelledby="tab-publications" tabindex="0">
+        <form class="results-filters" id="resultsFilters" role="search" aria-label="業績を絞り込む">
+          <div class="results-filter-row">
+            <div class="results-year-field">
+              <label for="resultsYear">年</label>
+              <select id="resultsYear" disabled><option value="all">すべての年</option></select>
+            </div>
+            <div class="results-search-field">
+              <label for="resultsSearch">キーワード</label>
+              <div class="results-search-input">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+                <input id="resultsSearch" type="search" placeholder="タイトル・著者・雑誌名で検索" autocomplete="off" disabled>
+              </div>
+            </div>
+            <button class="results-clear" type="reset" disabled>条件をクリア</button>
+          </div>
+          <div class="results-types" id="resultsTypes" role="group" aria-label="論文の種類">
+            <button type="button" data-type="all" aria-pressed="true" disabled>すべて</button>
+            <button type="button" data-type="en-peer" aria-pressed="false" disabled>英語・査読あり</button>
+            <button type="button" data-type="jp-peer" aria-pressed="false" disabled>日本語・査読あり</button>
+            <button type="button" data-type="jp-other" aria-pressed="false" disabled>日本語・査読なし</button>
+          </div>
+        </form>
+        <p class="results-category-note" id="resultsNote" hidden></p>
+        <div class="results-summary">
+          <p id="resultsCount" role="status" aria-live="polite" aria-atomic="true">論文を読み込み中です。</p>
+          <span>新しい年から表示</span>
+        </div>
+        <div id="resultsWarning" class="results-warning" hidden></div>
+        <div id="resultsList" aria-busy="true"><p class="results-message">業績を読み込み中です。</p></div>
+      </div>
+      <noscript><p class="results-message">業績一覧を表示するにはJavaScriptを有効にしてください。<a href="https://takayasu-research-lab.com/result.html">従来の研究業績ページ</a>でもご覧いただけます。</p></noscript>
+      <div class="results-bottom"><button type="button" id="resultsTop">ページ上部へ ↑</button></div>
+    </div>
+  </section>
+</main>

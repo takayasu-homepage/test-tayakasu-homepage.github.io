@@ -1,0 +1,40 @@
+<header class="site-header sticky-top">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid px-4 px-xl-5">
+      <a class="navbar-brand lab-brand" href="{{ '/' | relative_url }}">研究室名スペース</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#globalNav" aria-controls="globalNav" aria-expanded="false" aria-label="メニューを開く">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="globalNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link{% if page.nav == 'home' %} active{% endif %}"{% if page.nav == 'home' %} aria-current="page"{% endif %} href="{{ '/' | relative_url }}">トップ</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">研究室紹介</a></li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle{% if page.nav == 'members' %} active{% endif %}"{% if page.nav == 'members' %} aria-current="page"{% endif %} href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">メンバー</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{{ '/misako.html' | relative_url }}">高安 美佐子</a></li>
+              <li><a class="dropdown-item" href="{{ '/hideki.html' | relative_url }}">高安 秀樹</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">研究内容</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">選択肢 A</a></li>
+              <li><a class="dropdown-item" href="#">選択肢 B</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link{% if page.nav == 'results' %} active{% endif %}"{% if page.nav == 'results' %} aria-current="page"{% endif %} href="{{ '/result.html' | relative_url }}">業績</a></li>
+          <li class="nav-item">
+            <a class="nav-link{% if page.nav == 'books' %} active{% endif %}"{% if page.nav == 'books' %} aria-current="page"{% endif %} href="{{ '/books.html' | relative_url }}">著書</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link{% if page.nav == 'access' %} active{% endif %}"{% if page.nav == 'access' %} aria-current="page"{% endif %} href="{{ '/access.html' | relative_url }}">アクセス</a>
+          </li>
+          <li class="nav-item ms-lg-3"><a class="nav-link contact-link" href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

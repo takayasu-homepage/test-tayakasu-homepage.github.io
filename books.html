@@ -1,0 +1,38 @@
+---
+layout: default
+title: 著書
+nav: books
+scripts:
+  - /assets/js/books.js
+---
+<main class="books-page">
+  <section class="books-hero page-hero section-band">
+    <div class="container-xl">
+      <div class="books-hero-layout">
+        <div class="books-hero-copy">
+          <p class="section-label">Books</p>
+          <h1 class="page-title">著書</h1>
+          <p class="page-lead">研究成果を社会へひらく書籍アーカイブ</p>
+        </div>
+        <div class="books-shelf" id="booksShelf" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="books-section section-band">
+    <div class="container-xl">
+      <div class="books-toolbar">
+        <div class="books-filters" id="booksFilters" role="group" aria-label="著者で絞り込み">
+          <button type="button" class="books-filter" data-author="all" aria-pressed="true" aria-controls="booksGrid" disabled>すべて</button>
+          <button type="button" class="books-filter" data-author="misako" aria-pressed="false" aria-controls="booksGrid" disabled>高安 美佐子</button>
+          <button type="button" class="books-filter" data-author="hideki" aria-pressed="false" aria-controls="booksGrid" disabled>高安 秀樹</button>
+        </div>
+        <p class="books-count" id="booksCount" role="status" aria-live="polite" aria-atomic="true"></p>
+      </div>
+      <div class="books-grid" id="booksGrid" aria-label="著書一覧" aria-busy="true">
+        <p class="books-loading">著書を読み込み中です。</p>
+      </div>
+      <noscript><p class="books-loading">著書一覧を表示するにはJavaScriptを有効にしてください。</p></noscript>
+    </div>
+  </section>
+</main>
