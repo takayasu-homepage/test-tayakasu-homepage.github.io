@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Venue | APFA7 &amp; Tokyo Tech - Hitotsubashi Interdisciplinary Conference</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="../../share/css/base.css" rel="stylesheet" type="text/css" />
+<link href="../../share/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<script src="../../share/script/navi.js" type="text/javascript"></script>
+<script src="http://www.google.com/jsapi?key=ABQIAAAAp6TV0AuIqmidPqb7e9Ez9RQ4x5OmDmiOEZ3MtXHpgJsGkJJ7ERTHuAjlpafFiJgRzb80P6S-RNCi4w" type="text/javascript"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=ABQIAAAAp6TV0AuIqmidPqb7e9Ez9RQ4x5OmDmiOEZ3MtXHpgJsGkJJ7ERTHuAjlpafFiJgRzb80P6S-RNCi4w" type="text/javascript"></script>
+<script src="../../share/script/ew.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+google.load("maps", "2", {"language" : "en"});
+
+var map;
+var ew;
+var sidebar_html = "";
+var gmarkers = [];
+var htmls = [];
+var points = [];
+var charNum = 0;
+
+google.setOnLoadCallback(initializeEN);
+//]]>
+</script>
+</head>
+<body onunload="GUnload()">
+<div id="bg">
+ <h1><img src="../../share/imgs/header_apfa7.gif" alt="Applications of Physics in Financial Analysis 7th International Conference" width="567" height="28" /><a href="../../index.html" id="language"><img src="../imgs/share/header_bt_jp.gif" alt="日本語" width="134" height="28" border="0" /></a></h1>
+
+
+<!-- contents body -->
+ <div id="container">
+  <h2><img src="../imgs/share/main.jpg" alt="APFA7 &amp; Tokyo Tech - Hitotsubashi Interdisciplinary Conference &ldquo;New Approaches to Massive Information in Buisiness and Economy&rdquo;" width="750" height="132" /></h2>
+
+
+<!-- right area -->
+  <div id="con_right">
+   <h3><img src="../imgs/titles/venue.gif" alt="Venue" width="65" height="18" /></h3>
+
+   <div id="venue">
+
+    <dl class="schedule">
+     <dt>1st March (evening) :</dt>
+     <dd>Registration and the Welcome Buffet at &ldquo;Josui-Kaikan&rdquo;, Hitotsubashi University<br />
+      A few minutes walk from &ldquo;Jimbocho&rdquo; or &ldquo;Takebashi&rdquo; subway stations near the Imperial Palace.</dd>
+     <dt>2nd March to the noon of 5th:</dt>
+     <dd>Main Conference at &ldquo;West Bldg. #9&rdquo;, Tokyo Institute of Technology<br />
+      A few minutes walk from &ldquo;Ookayama&rdquo; station</dd>
+     <dt>Afternoon of 5th March:</dt>
+     <dd>The RIETI Policy Symposium, Closing Party at &ldquo;Josui-Kaikan&rdquo;, Hitotsubashi University<br />
+      A few minutes walk from &ldquo;Jimbocho&rdquo; or &ldquo;Takebashi&rdquo; subway stations near the Imperial Palace.</dd>
+    </dl>
+
+    <h4>Josui-Kaikan, Hitotsubashi University</h4>
+    <p><img src="../../share/imgs/josui.jpg" alt="" width="520" height="140" /></p>
+    <p>Access to &ldquo;Josui-Kaikan&rdquo;, Hitotsubashi University (Address: 2-1-1, Hitotsubashi, Chiyoda-ku, Tokyo)<br />
+     3-4 minutes walk from either &ldquo;Jimbocho&rdquo; Station (Exit A8) or &ldquo;Takebashi&rdquo; Station (Exit 1B) (see Map Josui-Kaikan).</p>
+    <table cellspacing="0" cellpadding="10" class="normal">
+     <tr>
+      <th>Address</th>
+      <td>2-1-1, Hitotsubashi, Chiyoda-ku, Tokyo</td>
+     </tr>
+     <tr>
+      <th>Major Routes of Access</th>
+      <td class="access_en">
+       <p><strong>From Narita Airport</strong><br />
+        Take a Narita skyliner (Keisei Line) to &ldquo;Nippori&rdquo; Station and transfer to JR Yamanote Line.<br />
+        Take a train bound for Shinjuku (counter-clockwise) to &ldquo;Sugamo&rdquo; Station.<br />
+        At &ldquo;Sugamo&rdquo;, transfer to Mita Line (Toei Subway) and get off at &ldquo;Jimbocho&rdquo; subway Station.<br />
+       The whole journey takes about 80 minutes.</p>
+       <p>        Three subway lines are crossing at &ldquo;Jimbocho&rdquo; station, Hanzomon Line, Mita Line and Shinjuku Line.<br />
+        Mita Line is connecting &ldquo;Ookayama&rdquo; Station directly. <br />
+        The ride from Ookayama Station to Jimbocho Station takes about 30 minutes.</p>
+       <p>Find routes by <a href="http://www.jorudan.co.jp/english/" target="_blank">Train Route Finder</a>.</p>
+      </td></tr>
+     <tr>
+      <th>Map</th>
+      <td width="5%"><img src="../imgs/place/josui_map.gif" alt="" width="400" height="400" /></td>
+     </tr>
+    </table>
+
+    <h4>West Bldg. 9, Ookayama Campus, Tokyo Institute of Technology</h4>
+    <p><img src="../../share/imgs/place.jpg" alt="" width="520" height="240" /></p>
+    <p>Access to &ldquo;West Bldg. #9&rdquo;, Tokyo Institute of Technology (Address: Ookayama, Meguro-ku, Tokyo)<br />
+     West Bldg. #9 in Ookayama campus is a few minutes walk from &ldquo;Ookayama&rdquo; Station. (<a href="http://www.titech.ac.jp/access-and-campusmap/e/o-okayama-campus.html" target="_blank">see Map Ookayama</a>)</p>
+    <table cellspacing="0" cellpadding="10" class="normal">
+     <tr>
+      <th>Address</th>
+      <td>2-12-1, Ookayama, Meguro-ku, Tokyo</td>
+     </tr>
+     <tr>
+      <th>Major Routes of Access</th>
+      <td class="access">
+       <dl>
+        <dt>From Downtown Tokyo to Ookayama Station there are 4 ways</dt>
+        <dd>1: Take Keihin-Tohoku Line(Japan Railways) to Ooimachi Station.<br />
+         Transfer to Ooimachi Line (Tokyu Transportation Systems) there and get off at Ookayama Station. The train ride from Ooimachi Station to Ookayama Station is about 10 minutes.</dd>
+        <dd>2: Take Yamanote Line (Japan Railways) to Meguro Station.<br />
+         Transfer to Meguro Line (Tokyu Transportation Systems) there and get off at Ookayama Station. The ride from Meguro Station to Ookayama Station takes about 10 minutes.</dd>
+        <dd>3: Take Mita Line (Toei Subway) to Meguro Station and continue the ride to Ookayama Station.</dd>
+        <dd>4: Take Namboku Line (Tokyo Metropolitan Subway) to Meguro and continue the ride to Ookayama.</dd>
+       </dl>
+       <dl>
+        <dt><a href="http://www.narita-airport.jp/en/access/train/index.html" target="_blank">General information from Narita Airport to Downtown Tokyo</a></dt>
+        <dd>1: Take a Narita skyliner railway to Nippori Station or Ueno Station.</dd>
+        <dd>2: Take a Narita express (JR railway) to Tokyo Station, or Shinagawa Station or Shinjuku Station.</dd>
+        <dd>3: <a href="http://www.narita-airport.jp/en/access/bus/index.html" target="_blank">Take a limousine bus runs from the airport to various destinations</a></dd>
+        <dd>4: Take a taxi (very expensive, about 20,000 yen).</dd>
+       </dl>
+       <p>Find routes by <a href="http://www.jorudan.co.jp/english/" target="_blank">Train Route Finder</a>.</p>
+      </td>
+     </tr>
+     <tr>
+      <th>Map</th>
+      <td width="5%"><img src="../imgs/place/campus_map.gif" alt="" width="400" height="200" /></td>
+     </tr>
+    </table>
+
+
+    <h4><a name="GMAP" id="GMAP"></a>Wide area map</h4>
+    <table>
+     <tr>
+      <td valign="top"><div id="map" style="width: 350px; height: 320px">Loading...</div></td>
+      <td valign="top" id="enmap"><div id="sidebar" style="overflow:auto;width:160px;height:320px;">Loading...</div></td>
+     </tr>
+    </table>
+
+   </div>
+
+  </div>
+<!-- //right area -->
+
+
+<!-- left area -->
+  <div id="con_left">
+<!--
+   <p><a href="index.php"><img src="../imgs/share/regist_bt_off.gif" alt="Registration" width="200" height="60" border="0" /></a></p>
+-->
+   <p><img src="../imgs/share/regist_blank.gif" width="200" height="60" border="0" /></p>
+
+<!-- navigation -->
+   <div id="navi">
+    <a href="index.html"><img src="../imgs/navi/navi_01_off.gif" alt="History and Scope" width="200" height="36" border="0" /></a><br />
+    <a href="keywords.html"><img src="../imgs/navi/navi_02_off.gif" alt="Keywords" width="200" height="33" border="0" /></a><br />
+    <a href="committee.html"><img src="../imgs/navi/navi_03_off.gif" alt="Committee" width="200" height="33" border="0" /></a><br />
+    <a href="speakers.html"><img src="../imgs/navi/navi_04_off.gif" alt="Invited Speakers" width="200" height="33" border="0" /></a><br />
+    <img src="../imgs/navi/navi_05.gif" alt="Venue" width="200" height="33" border="0" /><br />
+    <a href="dates.html"><img src="../imgs/navi/navi_06_off.gif" alt="Important Dates" width="200" height="33" border="0" /></a><br />
+    <a href="howto.html"><img src="../imgs/navi/navi_07_off.gif" alt="How to Registrate" width="200" height="33" border="0" /></a><br />
+    <a href="abstract.html"><img src="../imgs/navi/navi_08_off.gif" alt="Abstract Submission" width="200" height="33" border="0" /></a><br />
+    <a href="program.html"><img src="../imgs/navi/navi_09_off.gif" alt="Program" width="200" height="33" border="0" /></a><br />
+    <a href="links.html"><img src="../imgs/navi/navi_10_off.gif" alt="Links" width="200" height="36" border="0" /></a>
+   </div>
+<!-- //navigation -->
+
+<!-- RIETI banner -->
+    <p class="rieti"><a href="http://www.rieti.go.jp/en/events/09030501/info.html" target="_blank"><img src="../imgs/share/RIETI_symposium_en.gif" alt="RIETI Policy Symposium" width="200" height="60" border="0" /></a></p>
+<!-- //RIETI banner -->
+
+<!-- contact -->
+   <dl>
+    <dt><img src="../imgs/share/info_title.gif" alt="Contact Us" width="65" height="11" /></dt>
+    <dd>THIC &amp; APFA7 Secretariat<br />
+     <img src="../../share/imgs/info_mail.gif" alt="MAIL" width="16" height="12" /> <a href="mailto:info@thic-apfa7.com">info@thic-apfa7.com</a></dd>
+   </dl>
+<!-- //contact -->
+
+  </div>
+<!-- //left area -->
+
+
+ </div>
+<!-- //contents body -->
+
+
+<!-- footer -->
+ <div id="footer">
+  <p>Contact Us THIC &amp; APFA7 Secretariat <a href="mailto:info@thic-apfa7.com">info@thic-apfa7.com</a><br />
+  &copy;2008 THIC &amp; APFA7 Steering Committee. All Rights Reserved.</p>
+ </div>
+<!-- //footer -->
+
+
+</div>
+
+</body>
+</html>

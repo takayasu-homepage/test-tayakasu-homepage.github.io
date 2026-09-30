@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /jp/htm/
+Disallow: /en/htm/
+Allow: /jp/htm/*.html$
+Allow: /en/htm/*.html$
