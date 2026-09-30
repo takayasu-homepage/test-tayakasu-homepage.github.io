@@ -2,6 +2,8 @@
 layout: default
 title: 情報系研究室
 nav: home
+styles:
+  - /assets/css/news.css
 scripts:
   - /assets/js/news.js
 ---
@@ -111,17 +113,18 @@ scripts:
         </div>
       </section>
 
-      <section class="news-section section-band">
+      <section class="news-section section-band" id="news" data-news="latest" data-news-source="{{ '/data/csv/news.csv' | relative_url }}" data-site-base="{{ '/' | relative_url }}" aria-labelledby="newsHeading">
         <div class="container-xl">
           <div class="section-heading">
             <p class="section-label">Latest Updates</p>
-            <h2>NEWS</h2>
+            <h2 id="newsHeading">NEWS</h2>
           </div>
-          <div class="news-box" aria-live="polite">
-            <div id="newsList" class="news-list">
-              <p class="news-loading">NEWSを読み込み中です。</p>
-            </div>
+          <div class="news-box">
+            <div id="newsList" class="news-list" data-news-list></div>
+            <p class="news-status" data-news-status role="status">お知らせを読み込み中です。</p>
+            <noscript><p class="news-status">ニュースの表示にはJavaScriptを有効にしてください。</p></noscript>
           </div>
+          <div class="news-more"><a class="news-all-link" href="{{ '/news.html' | relative_url }}">ニュース一覧へ <span aria-hidden="true">→</span></a></div>
         </div>
       </section>
 </main>

@@ -1,0 +1,34 @@
+---
+layout: default
+title: ニュース
+nav: news
+styles:
+  - /assets/css/news.css
+scripts:
+  - /assets/js/news.js
+---
+<main class="news-page" data-news="archive" data-news-source="{{ '/data/csv/news.csv' | relative_url }}" data-site-base="{{ '/' | relative_url }}">
+  <section class="section-band news-page-hero">
+    <div class="container-xl news-archive-container">
+      <p class="section-label">Latest Updates</p>
+      <h1 class="page-title">NEWS</h1>
+      <p class="page-lead">研究室からのお知らせ</p>
+    </div>
+  </section>
+  <section class="news-archive-section" aria-label="ニュース一覧">
+    <div class="container-xl news-archive-container">
+      <div class="news-toolbar">
+        <div class="news-year-label">
+          <label for="newsYear">掲載年</label>
+          <select id="newsYear" class="news-year-select" data-news-year disabled>
+            <option value="all">すべての年</option>
+          </select>
+        </div>
+        <p class="news-status" data-news-status role="status">お知らせを読み込み中です。</p>
+      </div>
+      <div data-news-list></div>
+      <noscript><p>ニュースの表示にはJavaScriptを有効にしてください。</p></noscript>
+      <div class="news-back"><a href="{{ '/' | relative_url }}#news">トップページへ戻る</a></div>
+    </div>
+  </section>
+</main>
