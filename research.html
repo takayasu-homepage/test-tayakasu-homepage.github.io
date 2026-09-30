@@ -1,0 +1,188 @@
+---
+layout: default
+title: 研究紹介
+nav: research
+scripts:
+  - /assets/js/research.js
+---
+<main class="research-overview-page">
+  <section class="page-hero section-band">
+    <div class="container-xl">
+      <p class="section-label">Research</p>
+      <h1 class="page-title">研究紹介</h1>
+      <p class="page-lead">本研究室で行っている研究を、領域ごとに紹介します。</p>
+    </div>
+  </section>
+
+  <section class="research-overview-section section-band">
+    <div class="container-xl">
+      <nav class="research-domain-nav" aria-label="研究領域">
+        <p class="section-label">Research Areas</p>
+        <h2>研究領域</h2>
+        <div class="research-domain-links">
+          <a href="#finance">金融</a>
+          <a href="#intercompany">企業間取引</a>
+          <a href="#gps">GPS</a>
+          <a href="#microbiome">腸内細菌</a>
+          <a href="#pos">POS</a>
+          <a href="#sns">SNS</a>
+          <a href="#sony">SONY</a>
+        </div>
+      </nav>
+
+      <div class="research-domain-list">
+        <section class="research-domain-panel" id="finance">
+          <div class="research-domain-intro">
+            <div>
+              <p class="section-label">Finance</p>
+              <h2>金融</h2>
+              <div class="research-domain-description">
+            <p>金融市場では、多数の市場参加者がそれぞれの判断に基づいて注文を出し、その相互作用の結果として価格が形成されます。一見ランダムに見える価格変動の背後に、どのような市場参加者の行動や力学が潜んでいるのかを明らかにすることが、高安研究室の金融研究の中心的な関心です。</p>
+            <p>私たちは、価格変動をポテンシャル中のランダムウォークとして捉える独自の「PUCKモデル」や、市場参加者一人ひとりの売買行動から価格形成を再現する「ディーラーモデル」を開発してきました。さらに、外国為替市場の高頻度な注文・約定データを解析することで、注文板の需給バランス、注文の生成・取消、個々の高頻度トレーダーの戦略と価格変動との関係を調べています。こうした実データ解析と数理モデルを組み合わせることで、通常時の価格変動だけでなく、暴騰・暴落や市場間での変動の伝播が、ミクロな市場参加者の相互作用からどのように生じるのかを理解することを目指しています。</p>
+              </div>
+            </div>
+            <figure class="research-domain-figure"><img src="{{ '/data/images/research/finance.png' | relative_url }}" alt="金融市場の価格変動と取引の相互作用を表現したイラスト"></figure>
+          </div>
+          <h3>研究詳細</h3>
+          <div class="research-detail-list">
+            <div class="research-detail-row"><p>PUCKモデル</p><button type="button" data-research-detail="theme-01" data-research-title="PUCKモデル">研究紹介を見る</button></div>
+            <div class="research-detail-row"><p>ディーラーモデル</p><button type="button" data-research-detail="theme-02" data-research-title="ディーラーモデル">研究紹介を見る</button></div>
+          </div>
+        </section>
+
+        <section class="research-domain-panel" id="intercompany">
+          <div class="research-domain-intro">
+            <div>
+              <p class="section-label">Intercompany Transactions</p>
+              <h2>企業間取引</h2>
+              <div class="research-domain-description">
+            <p>企業は単独で活動しているのではなく、仕入れや販売を通じて多数の企業と結びつき、巨大な取引ネットワークを形成しています。一つの企業で生じた変化が取引先へ伝わり、さらにその先へ波及していくため、企業活動や経済全体の変動を理解するには、個々の企業だけでなく企業間のつながりを捉える必要があります。</p>
+            <p>高安研究室では、帝国データバンクとの共同研究を通じて、日本企業の大規模な取引・財務データを解析し、企業間取引ネットワークの構造とその時間発展、ネットワーク上のお金や売上の流れを研究してきました。企業間の取引額をネットワーク構造から推定するモデル、企業の成長と取引関係の変化、企業間でのリスク伝播や連鎖倒産、災害による売上減少の波及、地理的な制約と取引関係などを分析しています。近年では、実際の企業ネットワークが持つ主要な統計則を再現しながら、ネットワークの形成とその上を流れる資金を一体として記述するモデルの構築にも取り組んでいます。</p>
+              </div>
+            </div>
+            <figure class="research-domain-figure"><img src="{{ '/data/images/research/intercompany.png' | relative_url }}" alt="企業間取引ネットワークを表現したイラスト"></figure>
+          </div>
+          <h3>研究詳細</h3>
+          <div class="research-detail-list">
+            <div class="research-detail-row"><p>企業間取引ネットワーク</p><button type="button" data-research-detail="theme-03" data-research-title="企業間取引ネットワーク">研究紹介を見る</button></div>
+            <div class="research-detail-row"><p>重力相互作用モデル</p><button type="button" data-research-detail="theme-04" data-research-title="重力相互作用モデル">研究紹介を見る</button></div>
+          </div>
+        </section>
+
+        <section class="research-domain-panel" id="gps">
+          <div class="research-domain-intro">
+            <div>
+              <p class="section-label">GPS</p>
+              <h2>GPS</h2>
+              <div class="research-domain-description">
+            <p>スマートフォンの普及によって、人々が都市の中をいつ、どこからどこへ移動しているのかを大規模なデータとして捉えられるようになりました。高安研究室では、国内約100万人規模のユーザーについて約10分間隔で記録されたGPSデータを用い、個人の移動の集積として現れる都市全体の人流に、どのような普遍的な法則が存在するのかを研究してきました。</p>
+            <p>特に、都市を地域間のネットワークとして捉え、人の移動を電気回路に流れる電流になぞらえるモデルを構築しています。この枠組みから、人流に現れる普遍的なスケーリング則や都市のポテンシャル構造、揺動散逸関係を調べ、さらに従来の重力モデルを発展させた人流モデルへと研究を進めています。また、COVID-19流行時には、大規模GPSデータから日常活動ごとの人流を抽出し、感染拡大との関係をモデル化することで、実効再生産数や感染者数の予測にも応用しました。</p>
+              </div>
+            </div>
+            <figure class="research-domain-figure"><img src="{{ '/data/images/research/gps.png' | relative_url }}" alt="都市における人流とGPSデータを表現したイラスト"></figure>
+          </div>
+          <h3>研究詳細</h3>
+          <div class="research-detail-list">
+            <div class="research-detail-row"><p>人流モデル</p><button type="button" data-research-detail="theme-05" data-research-title="人流モデル">研究紹介を見る</button></div>
+            <div class="research-detail-row"><p>移動パターン分析</p><button type="button" data-research-detail="theme-09" data-research-title="移動パターン分析">研究紹介を見る</button></div>
+          </div>
+        </section>
+
+        <section class="research-domain-panel" id="microbiome">
+          <div class="research-domain-intro">
+            <div>
+              <p class="section-label">Gut Microbiome</p>
+              <h2>腸内細菌</h2>
+              <div class="research-domain-description">
+            <p>ヒトや動物の腸内には多数の細菌種が共存し、その構成は時間とともに絶えず変化しています。高安研究室では、この腸内細菌叢を、多数の構成要素が相互作用しながら形成する「生態系」として捉え、個々の菌だけを見るのではなく、細菌叢全体に現れる統計的な法則とその生成機構を数理的に理解することに関心を持ってきました。</p>
+            <p>研究室では、腸内細菌の存在量分布に見られる特徴を再現する三次元増殖モデルを構築した研究を出発点の一つとして、近年ではマウスから得られる高頻度な遺伝子組成時系列を解析し、腸内細菌叢の時間発展そのものをモデル化しています。その結果を踏まえ、細菌の空間的な増殖と確率的変動を組み込んだモデルによって、異なる腸内細菌叢に共通して観測される統計則を再現する研究へ発展しています。さらに、抗生物質投与後の腸内環境についても、薬物動態と細菌叢変化を高時間分解能で捉える研究を進めています。</p>
+              </div>
+            </div>
+            <figure class="research-domain-figure"><img src="{{ '/data/images/research/microbiome.png' | relative_url }}" alt="腸内細菌叢の生態系を表現したイラスト"></figure>
+          </div>
+          <h3>研究詳細</h3>
+          <div class="research-detail-list">
+            <div class="research-detail-row"><p>腸内細菌叢の生態系モデル</p><button type="button" data-research-detail="theme-06" data-research-title="腸内細菌叢の生態系モデル">研究紹介を見る</button></div>
+            <div class="research-detail-row"><p>個人差と群集構造</p><button type="button" data-research-detail="theme-10" data-research-title="個人差と群集構造">研究紹介を見る</button></div>
+          </div>
+        </section>
+
+        <section class="research-domain-panel" id="pos">
+          <div class="research-domain-intro">
+            <div>
+              <p class="section-label">POS</p>
+              <h2>POS</h2>
+              <div class="research-domain-description">
+            <p>POSデータには、商品が「いつ、いくつ、いくらで売れたか」という消費行動が詳細に記録されています。高安研究室では、コンビニエンスストアやスーパーマーケットの大規模POSデータを早くから研究対象とし、個々の商品や消費者の購買行動から、小売市場全体に現れる統計的な法則を明らかにしてきました。</p>
+            <p>これまでに、個人の購買金額に現れる統計則、商品の寿命やリピート購買、価格変化に対する集団的な購買行動などを分析してきました。その後、商品ごとの販売数のゆらぎに特徴的なスケーリング則が存在することを示し、その性質を利用した販売数予測へと発展させています。さらに、売れ残りによる廃棄と機会損失を同時に考慮した販売戦略や、多数の商品が新陳代謝しながら共存する小売市場を「商品生態系」としてモデル化する研究、実際のコンビニにおける購買行動を再現するネットワークモデルなど、POSデータから消費行動と小売市場のダイナミクスを理解する研究を進めています。</p>
+              </div>
+            </div>
+            <figure class="research-domain-figure"><img src="{{ '/data/images/research/pos.png' | relative_url }}" alt="POSデータと小売商品の販売変動を表現したイラスト"></figure>
+          </div>
+          <h3>研究詳細</h3>
+          <div class="research-detail-list">
+            <div class="research-detail-row"><p>購買行動分析</p><button type="button" data-research-detail="theme-07" data-research-title="購買行動分析">研究紹介を見る</button></div>
+            <div class="research-detail-row"><p>売上変動の分析</p><button type="button" data-research-detail="theme-11" data-research-title="売上変動の分析">研究紹介を見る</button></div>
+          </div>
+        </section>
+
+        <section class="research-domain-panel" id="sns">
+          <div class="research-domain-intro">
+            <div>
+              <p class="section-label">SNS</p>
+              <h2>SNS</h2>
+              <div class="research-domain-description">
+            <p>SNSやブログには、多数の人々が発信する言葉や意見が時々刻々と蓄積されます。高安研究室では、これらを単なる文章の集合ではなく、社会を構成する人々の感情や関心、情報伝播を観測できる大規模な社会データとして捉えてきました。個々の投稿というミクロな活動から、社会全体の感情や世論の変化というマクロな現象がどのように生じるのかが、この領域の中心的な関心です。</p>
+            <p>全国規模のブログやTwitter、Weiboなどを対象として、単語の出現頻度に現れる統計則、社会全体の感情の長期的な周期性や記憶、突発的な感情変化が外部イベントによるものか内部的な相互作用によるものか、といった問題を分析してきました。また、情報拡散をネットワーク上の伝播現象として捉え、フェイクニュースと実際のニュースでは拡散初期から伝播構造に違いがあることを示しています。近年では、COVID-19ワクチンをめぐる日本のTwitterデータを用いて、オンラインコミュニティへの所属と個人の意見変化、さらに意見と感情表現の関係を分析するなど、集団的な感情と世論形成のダイナミクスへ研究を発展させています。</p>
+              </div>
+            </div>
+            <figure class="research-domain-figure"><img src="{{ '/data/images/research/sns.png' | relative_url }}" alt="SNS上の情報拡散を表現したイラスト"></figure>
+          </div>
+          <h3>研究詳細</h3>
+          <div class="research-detail-list">
+            <div class="research-detail-row"><p>Web上の口コミ</p><button type="button" data-research-detail="theme-08" data-research-title="Web上の口コミ">研究紹介を見る</button></div>
+            <div class="research-detail-row"><p>情報拡散の分析</p><button type="button" data-research-detail="theme-12" data-research-title="情報拡散の分析">研究紹介を見る</button></div>
+          </div>
+        </section>
+
+        <section class="research-domain-panel" id="sony">
+          <div class="research-domain-intro">
+            <div>
+              <p class="section-label">SONY</p>
+              <h2>SONY</h2>
+              <div class="research-domain-description">
+            <p>製品市場では、商品の販売数は価格だけで決まるのではなく、競合製品の価格、製品の特性、発売からの時間、市場環境など、多数の要因が相互に関係しながら変化します。高安研究室では、2023年から2025年にソニーグループとの「ソニーデータ駆動型世界戦略共同研究講座」を設置し、大規模な市場データから製品市場の構造を定量化し、販売戦略につながる予測モデルを構築する研究に取り組んできました。</p>
+            <p>近年の研究では、米国のテレビ市場などを対象として、個別製品ごとの販売数を予測するモデルや、自社製品だけでなく競合製品の価格を考慮してマーケットシェアを予測するモデルを構築しています。また、大規模な顧客データから顧客行動を推定する研究も行っています。POS研究で蓄積してきた販売数のゆらぎや購買行動のモデル化を背景としつつ、実際の製品市場に存在する多数の競合商品と顧客の行動をデータから捉え、市場の変化を予測可能な形で記述することを目指しています。</p>
+              </div>
+            </div>
+            <figure class="research-domain-figure"><img src="{{ '/data/images/research/sony.png' | relative_url }}" alt="家電製品市場のデータ分析を表現したイラスト"></figure>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="modal fade research-modal" id="researchDetailModal" tabindex="-1" aria-labelledby="researchDetailModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header"><p class="modal-title" id="researchDetailModalTitle"></p><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button></div>
+      <div class="modal-body" id="researchDetailModalBody"></div>
+    </div>
+  </div>
+</div>
+
+<div hidden>
+  <template id="detail-theme-01">{% include research/theme-01.html %}</template>
+  <template id="detail-theme-02">{% include research/theme-02.html %}</template>
+  <template id="detail-theme-03">{% include research/theme-03.html %}</template>
+  <template id="detail-theme-04">{% include research/theme-04.html %}</template>
+  <template id="detail-theme-05">{% include research/theme-05.html %}</template>
+  <template id="detail-theme-06">{% include research/theme-06.html %}</template>
+  <template id="detail-theme-07">{% include research/theme-07.html %}</template>
+  <template id="detail-theme-08">{% include research/theme-08.html %}</template>
+  <template id="detail-theme-09">{% include research/theme-09.html %}</template>
+  <template id="detail-theme-10">{% include research/theme-10.html %}</template>
+  <template id="detail-theme-11">{% include research/theme-11.html %}</template>
+  <template id="detail-theme-12">{% include research/theme-12.html %}</template>
+</div>
