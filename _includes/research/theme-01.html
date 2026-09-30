@@ -1,0 +1,55 @@
+<p class="section-label">Finance</p>
+<h2>金融市場の変動解析（PUCK）</h2>
+
+<div class="research-copy">
+  <h3>1. PUCKとは</h3>
+  <p>PUCKとは、Potentials of Unbalanced Complex Kineticsの略です。 妖精が戯れているがごとくふらふらとゆらぎ、暴騰や暴落をもたらす市場価格の変動を、 シェイクスピアの戯曲「夏の夢」に登場する、悪戯好きな妖精にちなんだ名付けられました。 高頻度化する市場の取引をコンピュータがリアルタイムで監視し、統計物理学を駆使した科学的分析により、リスク回避、予測を行うソフトウェアです。</p>
+
+  <h3>2. 市場は単純なランダムウォークではない</h3>
+  <p>既存の理論(仮説)では、市場価格が上がるか下がるかは、常に確率1/2、つまりランダムウォークであるとされてきました(Fig.2-1)</p>
+  <figure class="puck-figure">
+    <img src="{{ '/data/images/intro/puck/fig2-1.gif' | relative_url }}" alt="市場価格のランダムウォークを示す図">
+    <figcaption>Fig. 2-1</figcaption>
+  </figure>
+  <p>しかし、現実の市場は、過去の価格に影響を受けており、そこには過去の価格に引き寄せられて安定な時期と、 過去の価格から逃げやすく不安定な時期が有ると考えられます(Fig.2-2)。</p>
+  <figure class="puck-figure">
+    <img src="{{ '/data/images/intro/puck/fig2-2.gif' | relative_url }}" alt="市場の安定した時期と不安定な時期を示す図">
+    <figcaption>Fig. 2-2</figcaption>
+  </figure>
+
+  <h3>3. 安定な時期と不安定な時期の違い</h3>
+  <figure class="puck-figure">
+    <img src="{{ '/data/images/intro/puck/fig3.gif' | relative_url }}" alt="安定な時期と不安定な時期の違いを示す図">
+    <figcaption>Fig. 3</figcaption>
+  </figure>
+
+  <h3>4. 安定な時期と不安定な時期の、価格変動の動力学としての理解</h3>
+  <p>価格の変動を単純な確率変動と認識するのではなく、過去の価格に引き寄せられる力(引力)、 または、押し出される力(斥力)が働いていると考える事が出来ます。</p>
+  <div class="puck-explanation-row">
+    <div class="puck-explanation">
+      <h4>引力が働く場合</h4>
+      <p>引力の場合、典型的にはFig.4-1の粟生線のようなポテンシャルが観測されます。 その時の価格の変動は、この勾配に束縛されて引き戻されやすいランダムウォークとなります(Fig.4-1)。</p>
+    </div>
+    <figure class="puck-figure">
+      <img src="{{ '/data/images/intro/puck/fig4-1.gif' | relative_url }}" alt="引力が働く場合の価格変動を示す図">
+      <figcaption>Fig. 4-1</figcaption>
+    </figure>
+  </div>
+  <div class="puck-explanation-row">
+    <div class="puck-explanation">
+      <h4>斥力が働く場合</h4>
+      <p>斥力の場合、典型的にはFig.4-2の赤線のようなポテンシャルが観測されます。 そのときの価格の変動は、この勾配に束縛されて押し出されるように変動します。 引力の場合、曲線の曲率が大きいほど、価格が動きづらく、斥力の場合は速く価格が動きやすい事を表しています。</p>
+    </div>
+    <figure class="puck-figure">
+      <img src="{{ '/data/images/intro/puck/fig4-2.gif' | relative_url }}" alt="斥力が働く場合の価格変動を示す図">
+      <figcaption>Fig. 4-2</figcaption>
+    </figure>
+  </div>
+
+  <h3>5. 引力と斥力の良い表示方法とは</h3>
+  <p>テクニカル分析とは異なり、個人の恣意の入るパラメータは導入していません。<br>つまり、</p>
+  <ul>
+    <li>力の分析方法は銘柄に依存しません。</li>
+    <li>力の「ある」「なし」は個人の判断に依りません</li>
+  </ul>
+</div>

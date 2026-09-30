@@ -18,13 +18,7 @@
               <li><a class="dropdown-item" href="{{ '/hideki.html' | relative_url }}">高安 秀樹</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown hover-dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">研究内容</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">選択肢 A</a></li>
-              <li><a class="dropdown-item" href="#">選択肢 B</a></li>
-            </ul>
-          </li>
+          <li class="nav-item"><a class="nav-link{% if page.nav == 'research' %} active{% endif %}"{% if page.nav == 'research' %} aria-current="page"{% endif %} href="{{ '/research.html' | relative_url }}">研究内容</a></li>
           <li class="nav-item"><a class="nav-link{% if page.nav == 'results' %} active{% endif %}"{% if page.nav == 'results' %} aria-current="page"{% endif %} href="{{ '/result.html' | relative_url }}">業績</a></li>
           <li class="nav-item">
             <a class="nav-link{% if page.nav == 'books' %} active{% endif %}"{% if page.nav == 'books' %} aria-current="page"{% endif %} href="{{ '/books.html' | relative_url }}">著書</a>
