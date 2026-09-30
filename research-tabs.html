@@ -1,0 +1,40 @@
+---
+layout: default
+title: 研究内容（旧タブ表示）
+nav: research
+scripts:
+  - /assets/js/research-tabs.js
+---
+<main class="research-page">
+  <section class="page-hero section-band">
+    <div class="container-xl">
+      <p class="section-label">Research Fields</p>
+      <h1 class="page-title">研究内容</h1>
+      <p class="page-lead">テーマを選択すると、概要や関連情報を表示します。</p>
+    </div>
+  </section>
+  <section class="research-detail-section section-band">
+    <div class="container-xl">
+      <div class="research-tabs" role="tablist" aria-label="研究テーマ">
+        <button type="button" id="tab-theme-01" role="tab" aria-selected="true" aria-controls="theme-01" data-theme="theme-01"><span class="research-tab-domain">金融</span><span class="research-tab-title">PUCKモデル</span></button>
+        <button type="button" id="tab-theme-02" role="tab" aria-selected="false" aria-controls="theme-02" data-theme="theme-02" tabindex="-1"><span class="research-tab-domain">金融</span><span class="research-tab-title">ディーラーモデル</span></button>
+        <button type="button" id="tab-theme-03" role="tab" aria-selected="false" aria-controls="theme-03" data-theme="theme-03" tabindex="-1"><span class="research-tab-domain">企業間取引</span><span class="research-tab-title">ネットワーク</span></button>
+        <button type="button" id="tab-theme-04" role="tab" aria-selected="false" aria-controls="theme-04" data-theme="theme-04" tabindex="-1"><span class="research-tab-domain">企業間取引</span><span class="research-tab-title">重力相互作用モデル</span></button>
+        <button type="button" id="tab-theme-05" role="tab" aria-selected="false" aria-controls="theme-05" data-theme="theme-05" tabindex="-1"><span class="research-tab-domain">GPS</span><span class="research-tab-title">人流モデル</span></button>
+        <button type="button" id="tab-theme-06" role="tab" aria-selected="false" aria-controls="theme-06" data-theme="theme-06" tabindex="-1"><span class="research-tab-domain">腸内細菌叢</span><span class="research-tab-title">腸内細菌</span></button>
+        <button type="button" id="tab-theme-07" role="tab" aria-selected="false" aria-controls="theme-07" data-theme="theme-07" tabindex="-1"><span class="research-tab-domain">POS</span><span class="research-tab-title">購買行動分析</span></button>
+        <button type="button" id="tab-theme-08" role="tab" aria-selected="false" aria-controls="theme-08" data-theme="theme-08" tabindex="-1"><span class="research-tab-domain">SNS</span><span class="research-tab-title">Web上の口コミ</span></button>
+      </div>
+      <div class="research-panels">
+        <section id="theme-01" class="research-panel" role="tabpanel" aria-labelledby="tab-theme-01">{% include research/theme-01.html %}</section>
+        <section id="theme-02" class="research-panel" role="tabpanel" aria-labelledby="tab-theme-02" hidden>{% include research/theme-02.html %}</section>
+        <section id="theme-03" class="research-panel" role="tabpanel" aria-labelledby="tab-theme-03" hidden>{% include research/theme-03.html %}</section>
+        <section id="theme-04" class="research-panel" role="tabpanel" aria-labelledby="tab-theme-04" hidden>{% include research/theme-04.html %}</section>
+        <section id="theme-05" class="research-panel" role="tabpanel" aria-labelledby="tab-theme-05" hidden>{% include research/theme-05.html %}</section>
+        <section id="theme-06" class="research-panel" role="tabpanel" aria-labelledby="tab-theme-06" hidden>{% include research/theme-06.html %}</section>
+        <section id="theme-07" class="research-panel" role="tabpanel" aria-labelledby="tab-theme-07" hidden>{% include research/theme-07.html %}</section>
+        <section id="theme-08" class="research-panel" role="tabpanel" aria-labelledby="tab-theme-08" hidden>{% include research/theme-08.html %}</section>
+      </div>
+    </div>
+  </section>
+</main>
