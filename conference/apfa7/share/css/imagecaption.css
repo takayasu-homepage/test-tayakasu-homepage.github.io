@@ -1,0 +1,55 @@
+div.imagecaption {
+   border: 3px solid #B0C4DE; /* 1.枠線 */
+   background-color: #ffffff;  /* 2.背景色 */
+	width: 190px;
+   margin: 3px;
+}
+div.imagecaption2 {
+   border: 1px solid #B0C4DE; /* 1.枠線 */
+   background-color: #ffffff;  /* 2.背景色 */
+	width: 120px;
+	height: 110px;
+	float: left;
+	margin: 2px;
+	}
+div.imagecaption2_en {
+   border: 1px solid #B0C4DE; /* 1.枠線 */
+   background-color: #ffffff;  /* 2.背景色 */
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin: 2px;
+	}
+div.imagecaption_firm {
+   border: 1px solid #B0E0E6; /* 1.枠線 */
+   background-color: #ffffff;  /* 2.背景色 */
+	width: 120px;
+	height: 130px;
+	float: left;
+	margin: 2px;
+	}
+p.image{
+   text-align: center; /* 3.中央寄せ */
+   margin: 0px;        /* 4.余白・間隔 */
+}
+p.image2{
+   text-align: center; /* 3.中央寄せ */
+   margin: 2px;        /* 4.余白・間隔 */
+}
+p.caption {
+   text-align: center;
+   font-size: 90%;  /* 5.文字サイズ */
+   color: black; /* 6.文字色 */
+}
+p.caption_firm {
+   text-align: center; /* 3.中央寄せ */
+   margin: 0px;        /* 4.余白・間隔 */
+   font-size: 90%;  /* 5.文字サイズ */
+   color: black; /* 6.文字色 */
+}
+p.caption_TIT {
+   text-align: center; /* 3.中央寄せ */
+   margin: 0px;        /* 4.余白・間隔 */
+   font-size: 140%;  /* 5.文字サイズ */
+   color: black; /* 6.文字色 */
+}

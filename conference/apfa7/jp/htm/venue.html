@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>開催場所 ｜ 東工大・一橋大国際会議 &amp; APFA7</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="../../share/css/base.css" rel="stylesheet" type="text/css" />
+<link href="../../share/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<script src="../../share/script/navi.js" type="text/javascript"></script>
+<script src="http://maps.google.co.jp/maps?file=api&amp;v=2.x&amp;key=ABQIAAAAp6TV0AuIqmidPqb7e9Ez9RQ4x5OmDmiOEZ3MtXHpgJsGkJJ7ERTHuAjlpafFiJgRzb80P6S-RNCi4w" type="text/javascript"></script>
+<script src="http://www.google.com/jsapi?key=ABQIAAAAp6TV0AuIqmidPqb7e9Ez9RQ4x5OmDmiOEZ3MtXHpgJsGkJJ7ERTHuAjlpafFiJgRzb80P6S-RNCi4w" type="text/javascript"></script>
+<script src="../../share/script/ew.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+google.load("maps", "2", {"language" : "ja"});
+
+var map;
+var ew;
+var sidebar_html = "";
+var gmarkers = [];
+var htmls = [];
+var points = [];
+var charNum = 0;
+
+google.setOnLoadCallback(initialize);
+//]]>
+</script>
+</head>
+<body onunload="GUnload()">
+<div id="bg">
+ <h1><img src="../../share/imgs/header_apfa7.gif" alt="Applications of Physics in Financial Analysis 7th International Conference" width="567" height="28" /><a href="../../en/htm/index.html" id="language"><img src="../imgs/share/header_bt_en.gif" alt="ENGLISH" width="134" height="28" border="0" /></a></h1>
+
+
+<!-- contents body -->
+ <div id="container">
+  <h2><img src="../imgs/share/main.jpg" alt="東工大・一橋大国際会議 &amp; APFA7　「経済・産業における大規模データへの新しいアプローチ」" width="750" height="132" /></h2>
+
+
+<!-- right area -->
+  <div id="con_right">
+   <h3><img src="../imgs/titles/place.gif" alt="開催場所" width="79" height="19" /></h3>
+
+   <div id="venue">
+
+    <dl class="schedule">
+     <dt>3月1日（日）夕方：</dt>
+     <dd>一橋大学如水会館にて受付と開会式（立食パーティを含む）<br />
+     地下鉄「神保町」（出口A8）あるいは「竹橋」（出口1B)から徒歩で数分</dd>
+     <dt>3月2日（月）から5日（木）午前中まで：</dt>
+     <dd>東京工業大学西9号館にて会議<br />
+     目黒線・大井町線「大岡山」から徒歩で2、3分</dd>
+     <dt>3月5日（木）午後：</dt>
+     <dd>一橋大学如水会館にて経済産業研究所主催シンポジウムおよび閉会式<br />
+     （立食パーティを含む）<br />
+     地下鉄「神保町」あるいは「竹橋」から徒歩で数分</dd>
+    </dl>
+
+    <h4>一橋大学如水会館</h4>
+    <p><img src="../../share/imgs/josui.jpg" alt="" width="520" height="140" /></p>
+    <table cellspacing="0" cellpadding="10" class="normal">
+     <tr>
+      <th>住所</th>
+      <td>〒101-0003 東京都千代田区一ッ橋2-1-1</td>
+     </tr>
+     <tr>
+      <th>交通</th>
+     <td> 最寄り駅「神保町」は半蔵門線・三田線・新宿線の駅。<br />
+       三田線は目黒線と相互乗り入れしており、「大岡山」と直接つながっている。<br />
+      「大岡山」と「神保町」の移動時間は30分ほど。</td>
+     </tr>
+     <tr>
+      <th>地図</th>
+      <td width="5%"><img src="../imgs/place/josui_map.gif" alt="" width="400" height="400" /></td>
+     </tr>
+    </table>
+
+    <h4>東京工業大学西9号館</h4>
+    <p><img src="../../share/imgs/campus.jpg" alt="" width="520" height="240" /></p>
+    <p>東京工業大学西9号館は、「大岡山」駅の目の前にある東京工業大学大岡山キャンパスに入って徒歩2、3分。<br />
+<a href="http://www.titech.ac.jp/access-and-campusmap/j/o-okayama-campus-j.html" target="_blank">詳しい位置は地図を参照のこと</a></p>
+    <table cellspacing="0" cellpadding="10" class="normal">
+     <tr>
+      <th>住所</th>
+      <td>〒152-8550 東京都目黒区大岡山2-12-1</td>
+     </tr>
+     <tr>
+      <th>交通</th>
+      <td class="access">
+       <dl>
+        <dt>東京の中心方向から「大岡山」に来る方法は下記の通り</dt>
+        <dd>1:JR京浜東北線「大井町」で東急大井町線に乗り換え、急行停車駅「大岡山」で下車</dd>
+        <dd>2:JR山の手線「目黒」で東急目黒線に乗り換え、急行停車駅「大岡山」で下車</dd>
+        <dd>3:都営地下鉄三田線（目黒方向）に乗車、「大岡山」で下車 （途中駅「白金高輪」が終点の場合にはホーム反対側の電車に乗り換える）</dd>
+        <dd>4:東京メトロ南北線（目黒方向）に乗車、「大岡山」で下車 （途中駅「白金高輪」が終点の場合にはホーム反対側の電車に乗り換える）</dd>
+       </dl>
+     </td>
+     </tr>
+     <tr>
+      <th>地図</th>
+      <td width="5%"><img src="../imgs/place/campus_map.gif" alt="" width="400" height="200" /></td>
+     </tr>
+    </table>
+
+    <h4><a name="GMAP" id="GMAP"></a>広域地図</h4>
+
+    <table>
+     <tr>
+      <td valign="top"><div id="map" style="width: 350px; height: 320px">Loading...</div></td>
+      <td valign="top"><div id="sidebar" style="overflow:auto;width:160px;height:320px;">Loading...</div></td>
+     </tr>
+    </table>
+
+   </div>
+  
+  </div>
+<!-- //right area -->
+
+
+<!-- left area -->
+  <div id="con_left">
+   <!--
+   <p><a href="index.php"><img src="../imgs/share/regist_bt_off.gif" alt="参加登録" width="200" height="60" border="0" /></a></p>
+   -->
+   <p><img src="../imgs/share/regist_blank.gif" width="200" height="60"></p>
+
+<!-- navigation -->
+   <div id="navi">
+    <a href="../../index.html"><img src="../imgs/navi/navi_01_off.gif" alt="開催概要" width="200" height="36" border="0" /></a><br />
+    <a href="keywords.html"><img src="../imgs/navi/navi_02_off.gif" alt="キーワード" width="200" height="33" border="0" /></a><br />
+    <a href="committee.html"><img src="../imgs/navi/navi_03_off.gif" alt="実行組織" width="200" height="33" border="0" /></a><br />
+    <a href="speakers.html"><img src="../imgs/navi/navi_04_off.gif" alt="招待講演" width="200" height="33" border="0" /></a><br />
+    <img src="../imgs/navi/navi_05.gif" alt="開催場所" width="200" height="33" border="0" /><br />
+    <a href="dates.html"><img src="../imgs/navi/navi_06_off.gif" alt="スケジュール" width="200" height="33" border="0" /></a><br />
+    <a href="howto.html"><img src="../imgs/navi/navi_07_off.gif" alt="参加登録方法" width="200" height="33" border="0" /></a><br />
+    <a href="abstract.html"><img src="../imgs/navi/navi_08_off.gif" alt="アブストラクト投稿" width="200" height="33" border="0" /></a><br />
+    <a href="program.html"><img src="../imgs/navi/navi_09_off.gif" alt="開催プログラム" width="200" height="33" border="0" /></a><br />
+    <a href="links.html"><img src="../imgs/navi/navi_10_off.gif" alt="関連リンク" width="200" height="36" border="0" /></a>
+   </div>
+<!-- //navigation -->
+
+<!-- RIETI banner -->
+    <p class="rieti"><a href="http://www.rieti.go.jp/jp/events/09030501/info.html" target="_blank"><img src="../imgs/share/RIETI_symposium_jp.gif" alt="RIETI 政策シンポジウム" width="200" height="60" border="0" /></a></p>
+<!-- //RIETI banner -->
+
+<!-- contact -->
+   <dl>
+    <dt><img src="../imgs/share/info_title.gif" alt="お問い合わせ先" width="84" height="14" /></dt>
+    <dd>THIC &amp; APFA7運営事務局<br />
+     <img src="../../share/imgs/info_mail.gif" alt="MAIL" width="16" height="12" />　<a href="mailto:info@thic-apfa7.com">info@thic-apfa7.com</a></dd>
+   </dl>
+<!-- //contact -->
+
+  </div>
+<!-- //left area -->
+
+
+ </div>
+<!-- //contents body -->
+
+
+<!-- footer -->
+ <div id="footer">
+  <p>当カンファレンスについてのお問い合わせ先　THIC &amp; APFA7運営事務局　<a href="mailto:info@thic-apfa7.com">info@thic-apfa7.com</a><br />
+  &copy;2008 THIC &amp; APFA7 Steering Committee. All Rights Reserved.</p>
+ </div>
+<!-- //footer -->
+
+</div>
+
+</body>
+</html>
