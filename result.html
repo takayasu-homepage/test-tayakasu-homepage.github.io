@@ -41,11 +41,20 @@ scripts:
             </div>
             <button class="results-clear" type="reset" disabled>条件をクリア</button>
           </div>
-          <div class="results-types" id="resultsTypes" role="group" aria-label="論文の種類">
-            <button type="button" data-type="all" aria-pressed="true" disabled>すべて</button>
-            <button type="button" data-type="en-peer" aria-pressed="false" disabled>英語・査読あり</button>
-            <button type="button" data-type="jp-peer" aria-pressed="false" disabled>日本語・査読あり</button>
-            <button type="button" data-type="jp-other" aria-pressed="false" disabled>日本語・査読なし</button>
+          <div class="results-filter-options" id="resultsFilterOptions">
+            <div class="results-filter-group" id="resultsAuthors" role="group" aria-label="著者">
+              <span class="results-filter-label">著者</span>
+              <button type="button" data-author="all" aria-pressed="true" disabled>すべて</button>
+              <button type="button" data-author="misako" aria-pressed="false" disabled>高安美佐子</button>
+              <button type="button" data-author="hideki" aria-pressed="false" disabled>高安秀樹</button>
+            </div>
+            <div class="results-filter-group" id="resultsTypes" role="group" aria-label="論文の種類">
+              <span class="results-filter-label">種類</span>
+              <button type="button" data-type="all" aria-pressed="true" disabled>すべて</button>
+              <button type="button" data-type="en-peer" aria-pressed="false" disabled>英語・査読あり</button>
+              <button type="button" data-type="jp-peer" aria-pressed="false" disabled>日本語・査読あり</button>
+              <button type="button" data-type="jp-other" aria-pressed="false" disabled>日本語・査読なし</button>
+            </div>
           </div>
         </form>
         <p class="results-category-note" id="resultsNote" hidden></p>

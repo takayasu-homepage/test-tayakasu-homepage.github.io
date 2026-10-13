@@ -128,10 +128,19 @@ function resultYears(records) {
   return [...new Set(records.map(record => record.year))].sort((a, b) => (Number(b) || 0) - (Number(a) || 0));
 }
 
-function filterResults(records, { year = "all", type = "all", query = "" }) {
+function resultAuthorMatches(record, author) {
+  if (author === "all") return true;
+  const patterns = author === "misako"
+    ? [/高安\s*美佐子/u, /misako\s*takayasu/i, /\bm\.?\s*takayasu\b/i]
+    : [/高安\s*秀樹/u, /hideki\s*takayasu/i, /\bh\.?\s*takayasu\b/i];
+  return patterns.some(pattern => pattern.test(record.authors));
+}
+
+function filterResults(records, { year = "all", type = "all", author = "all", query = "" }) {
   const words = resultNormalize(query).split(" ").filter(Boolean);
   return records.filter(record => (year === "all" || record.year === year)
     && (type === "all" || record.type === type)
+    && resultAuthorMatches(record, author)
     && words.every(word => record.search.includes(word)));
 }
 
@@ -153,6 +162,7 @@ function initResults() {
   const year = document.querySelector("#resultsYear");
   const search = document.querySelector("#resultsSearch");
   const types = document.querySelector("#resultsTypes");
+  const authors = document.querySelector("#resultsAuthors");
   const count = document.querySelector("#resultsCount");
   const list = document.querySelector("#resultsList");
   const note = document.querySelector("#resultsNote");
@@ -161,6 +171,7 @@ function initResults() {
   let category = "publications";
   let current = null;
   let selectedType = "all";
+  let selectedAuthor = "all";
   let request = 0;
 
   function setType(type) {
@@ -168,9 +179,14 @@ function initResults() {
     types.querySelectorAll("button").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.type === type)));
   }
 
+  function setAuthor(author) {
+    selectedAuthor = author;
+    authors.querySelectorAll("button").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.author === author)));
+  }
+
   function render() {
     if (!current) return;
-    const records = filterResults(current.records, { year: year.value, query: search.value, type: selectedType });
+    const records = filterResults(current.records, { year: year.value, query: search.value, type: selectedType, author: selectedAuthor });
     const partial = current.failed.length ? "（一部のデータを表示）" : "";
     count.textContent = `${resultCategories[category].label}：${records.length}件${partial}`;
     if (!records.length) {
@@ -199,9 +215,10 @@ function initResults() {
     panel.setAttribute("aria-labelledby", `tab-${category}`);
     form.reset();
     setType("all");
+    setAuthor("all");
     year.innerHTML = '<option value="all">すべての年</option>';
     search.placeholder = config.placeholder;
-    types.hidden = category !== "publications";
+    document.querySelector("#resultsFilterOptions").hidden = category !== "publications";
     note.hidden = !config.note;
     note.textContent = config.note || "";
     warning.hidden = true;
@@ -280,11 +297,13 @@ function initResults() {
     year.value = "all";
     search.value = "";
     setType("all");
+    setAuthor("all");
     render();
   });
   year.addEventListener("change", render);
   search.addEventListener("input", render);
   types.querySelectorAll("button").forEach(button => button.addEventListener("click", () => { setType(button.dataset.type); render(); }));
+  authors.querySelectorAll("button").forEach(button => button.addEventListener("click", () => { setAuthor(button.dataset.author); render(); }));
   document.querySelector("#resultsTop").addEventListener("click", () => document.querySelector("#pageTop").scrollIntoView());
   load(categoryFromHash());
 }
