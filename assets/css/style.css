@@ -1241,6 +1241,83 @@ body {
   background: linear-gradient(180deg, #f6f9fc 0%, #ffffff 380px);
 }
 
++.about-page {
+  background: linear-gradient(180deg, #f6f9fc 0%, #ffffff 440px);
+}
+
+.about-hero {
+  padding-bottom: 56px;
+}
+
+.about-section {
+  padding-top: 24px;
+}
+
+.about-document {
+  padding: clamp(28px, 5vw, 60px);
+  background: var(--white);
+  border: 1px solid rgba(16, 32, 51, 0.12);
+  border-radius: 6px;
+  box-shadow: 0 14px 36px rgba(7, 20, 39, 0.08);
+}
+
+.about-document h2 {
+  margin: 4rem 0 1.35rem;
+  padding: 0 0 0.75rem 1rem;
+  font-size: clamp(1.75rem, 3vw, 2.45rem);
+  font-weight: 800;
+  line-height: 1.35;
+  border-bottom: 1px solid var(--line);
+  border-left: 5px solid var(--blue);
+}
+
+.about-document h2:first-child {
+  margin-top: 0;
+}
+
+.about-document h3 {
+  margin: 2.25rem 0 0.8rem;
+  color: #12385a;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.65;
+}
+
+.about-document .about-topic-group {
+  margin-top: 3rem;
+  padding: 0.7rem 1rem;
+  color: var(--ink);
+  background: #eef7ff;
+  border-left: 4px solid var(--cyan);
+}
+
+.about-document p {
+  margin: 0 0 1.3rem;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.about-document .about-key-point {
+  margin-bottom: 0.55rem;
+  padding-left: 1.25rem;
+  color: #12385a;
+  font-weight: 800;
+}
+
+.about-document .about-citation {
+  margin-top: -0.25rem;
+  padding: 0.55rem 0.8rem;
+  color: #49647f;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.7;
+  background: var(--panel);
+  border-left: 3px solid #b8d5f0;
+}
+
 .access-hero .page-title {
   margin-bottom: 0;
 }
