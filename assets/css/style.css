@@ -631,6 +631,96 @@ body {
   background: var(--white);
 }
 
+.conference-section {
+  background:
+    linear-gradient(180deg, #f6f9fc 0%, #eef4fa 100%);
+}
+
+.conference-heading {
+  max-width: 900px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.conference-lead {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.8;
+}
+
+.conference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.conference-card {
+  display: flex;
+  min-height: 260px;
+  padding: 32px;
+  color: var(--ink);
+  text-decoration: none;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid rgba(16, 32, 51, 0.1);
+  border-top: 4px solid var(--cyan);
+  border-radius: 6px;
+  box-shadow: 0 14px 36px rgba(7, 20, 39, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.conference-card h3 {
+  position: relative;
+  align-self: flex-start;
+  margin: 0 0 22px;
+  padding-bottom: 10px;
+  font-size: clamp(1.55rem, 2.2vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.conference-card h3::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  content: "";
+  background: var(--cyan);
+  border-radius: 2px;
+}
+
+.conference-name {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.conference-date {
+  margin: auto 0 0;
+  padding-top: 32px;
+  color: var(--muted);
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.conference-card:hover {
+  color: var(--ink);
+  border-color: rgba(16, 32, 51, 0.16);
+  border-top-color: var(--cyan);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 44px rgba(7, 20, 39, 0.14);
+}
+
+.conference-card:focus-visible {
+  outline: 3px solid #1c75bc;
+  outline-offset: 4px;
+}
+
 .news-box {
   max-width: 960px;
   height: 360px;
@@ -1493,6 +1583,15 @@ body {
     padding: 64px 0;
   }
 
+  .conference-grid {
+    gap: 18px;
+  }
+
+  .conference-card {
+    min-height: 250px;
+    padding: 26px 24px;
+  }
+
   .research-tabs {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1551,6 +1650,16 @@ body {
   .book-list,
   .external-links {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .conference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conference-card {
+    min-height: 230px;
   }
 }
 
