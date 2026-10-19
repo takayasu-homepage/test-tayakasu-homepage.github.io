@@ -1,0 +1,455 @@
+.members-page {
+  background: var(--white);
+}
+
+.members-local-nav {
+  position: sticky;
+  z-index: 20;
+  top: 78px;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
+
+.members-local-nav .container-xl {
+  display: flex;
+  gap: 8px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  overflow-x: auto;
+}
+
+.members-local-nav a {
+  flex: 0 0 auto;
+  padding: 0.72rem 1rem;
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--white);
+}
+
+.members-local-nav a:hover,
+.members-local-nav a:focus-visible {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.members-section {
+  padding: 88px 0;
+  scroll-margin-top: 154px;
+}
+
+.members-section-muted {
+  background: linear-gradient(180deg, #f6f9fc 0%, #eef4fa 100%);
+}
+
+.members-section-heading {
+  margin-bottom: 44px;
+}
+
+.members-section-heading h2 {
+  margin: 0.45rem 0 0;
+  font-size: clamp(2rem, 3.4vw, 3.35rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.members-section-heading-with-note {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.members-section-heading-with-note > p {
+  max-width: 430px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.7;
+  text-align: right;
+}
+
+.members-group + .members-group {
+  margin-top: 72px;
+}
+
+.members-group-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.members-group-heading h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  font-weight: 800;
+}
+
+.member-category {
+  margin: 0 0 0.45rem;
+  color: var(--cyan);
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.former-card h4 {
+  margin: 0;
+  font-size: 1.18rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.member-affiliation,
+.member-specialty,
+.member-contact {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.member-specialty {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.member-contact span,
+.member-list-contact span {
+  margin-right: 0.55rem;
+  color: var(--cyan);
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.member-detail-link,
+.former-card a,
+.member-list-contact a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--blue);
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.member-detail-link + .member-detail-link {
+  margin-left: 1rem;
+}
+
+.member-detail-link:hover,
+.member-detail-link:focus-visible,
+.former-card a:hover,
+.former-card a:focus-visible,
+.member-list-contact a:hover,
+.member-list-contact a:focus-visible {
+  text-decoration: underline;
+}
+
+.member-list-groups {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.alumni-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.member-list-group,
+.alumni-group {
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.member-list-group-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 20px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+.member-list-group-title h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.member-list-row {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 20px;
+}
+
+.member-list-row + .member-list-row {
+  border-top: 1px solid var(--line);
+}
+
+.member-list-row h5 {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.member-list-row p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.member-list-contact {
+  flex: 0 0 auto;
+  max-width: 48%;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.member-list-contact a {
+  margin-top: 0.35rem;
+}
+
+.former-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.former-card {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.former-card img {
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+  background: #e8eef5;
+}
+
+.former-card p:not(.member-category) {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.thesis-years {
+  border-top: 2px solid var(--ink);
+}
+
+.thesis-year {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.thesis-year-heading {
+  padding: 24px 4px 18px;
+}
+
+.thesis-year-heading h3 {
+  margin: 0;
+  font-size: 1.18rem;
+  font-weight: 800;
+}
+
+.thesis-table-wrap {
+  overflow-x: auto;
+}
+
+.thesis-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.thesis-table th {
+  padding: 13px 16px;
+  color: var(--white);
+  font-size: 0.82rem;
+  text-align: left;
+  background: var(--navy);
+}
+
+.thesis-table td {
+  padding: 16px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+
+.thesis-table th:first-child,
+.thesis-table td:first-child {
+  width: 20%;
+  font-weight: 700;
+}
+
+.thesis-table th:last-child,
+.thesis-table td:last-child {
+  width: 17%;
+}
+
+.members-message {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 26px;
+  color: var(--muted);
+  text-align: center;
+  background: var(--panel);
+  border-radius: 6px;
+}
+
+.members-error {
+  color: #9b2c2c;
+  background: #fff5f5;
+}
+
+@media (max-width: 991.98px) {
+  .members-local-nav {
+    top: 68px;
+  }
+
+  .member-list-groups,
+  .alumni-list,
+  .former-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .members-local-nav {
+    position: static;
+  }
+
+  .members-local-nav .container-xl {
+    flex-wrap: wrap;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .members-local-nav a {
+    flex: 1 1 calc(50% - 4px);
+    text-align: center;
+  }
+
+  .members-local-nav a:last-child {
+    flex-basis: 100%;
+  }
+
+  .members-section {
+    padding: 64px 0;
+    scroll-margin-top: 24px;
+  }
+
+  .members-section-heading-with-note {
+    display: block;
+  }
+
+  .members-section-heading-with-note > p {
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .member-list-row {
+    display: block;
+  }
+
+  .member-list-contact {
+    max-width: none;
+    margin-top: 0.75rem;
+    text-align: left;
+  }
+
+  .former-card {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .former-card img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .thesis-table-wrap {
+    padding-left: 0;
+  }
+
+  .thesis-table,
+  .thesis-table tbody,
+  .thesis-table tr,
+  .thesis-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .thesis-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .thesis-table tr {
+    padding: 17px 18px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .thesis-table tr + tr {
+    margin-top: 12px;
+  }
+
+  .thesis-table td,
+  .thesis-table td:first-child,
+  .thesis-table td:last-child {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+
+  .thesis-table td + td {
+    margin-top: 12px;
+  }
+
+  .thesis-table td::before {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--cyan);
+    content: attr(data-label);
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+}
