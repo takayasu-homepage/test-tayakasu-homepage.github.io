@@ -146,7 +146,7 @@ function filterResults(records, { year = "all", type = "all", author = "all", qu
 
 function resultEntry(record, category) {
   const aside = `${category !== "publications" ? `<span class="result-date">${resultEscape(record.date)}</span>` : ""}${record.badge ? `<span class="result-tag">${resultEscape(record.badge)}</span>` : ""}`;
-  const linkLabel = category === "publications" ? "論文を見る" : "記事・資料を見る";
+  const linkLabel = category === "publications" ? "Link" : "記事・資料を見る";
   return `<article class="result-entry result-entry--${category}" data-result-id="${resultEscape(record.id)}">
     <div class="result-aside">${aside}</div>
     <div class="result-body"><h3>${resultEscape(record.title)}</h3>${record.authors ? `<p>${resultEscape(record.authors)}</p>` : ""}${record.meta ? `<p>${resultEscape(record.meta)}</p>` : ""}</div>

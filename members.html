@@ -1,0 +1,103 @@
+---
+layout: default
+title: メンバー
+nav: members
+styles:
+  - /assets/css/members.css
+scripts:
+  - /assets/js/members.js
+---
+<main class="members-page" id="pageTop">
+  <section class="page-hero section-band">
+    <div class="container-xl">
+      <p class="section-label">Lab Members</p>
+      <h1 class="page-title">メンバー</h1>
+      <p class="page-lead">高安研究室の現在のメンバー、過去の在籍者、学位論文・卒業研究の記録</p>
+    </div>
+  </section>
+
+  <nav class="members-local-nav" aria-label="メンバーページ内の目次">
+    <div class="container-xl">
+      <a href="#current">現在のメンバー</a>
+      <a href="#former">過去のメンバー</a>
+      <a href="#theses">学位論文・卒業研究</a>
+    </div>
+  </nav>
+
+  <section class="members-section" id="current">
+    <div class="container-xl">
+      <div class="members-section-heading">
+        <p class="section-label">Current Members</p>
+        <h2>現在のメンバー</h2>
+      </div>
+
+      <section class="members-group" aria-labelledby="coreMembersTitle">
+        <div class="members-group-heading">
+          <h3 id="coreMembersTitle">教員・研究員</h3>
+        </div>
+        <div class="former-card-grid" id="coreMembers" aria-busy="true">
+          <p class="members-message">メンバーを読み込み中です。</p>
+        </div>
+      </section>
+
+      <section class="members-group" aria-labelledby="visitingMembersTitle">
+        <div class="members-group-heading">
+          <h3 id="visitingMembersTitle">客員教員</h3>
+        </div>
+        <div class="former-card-grid" id="visitingMembers" aria-busy="true"></div>
+      </section>
+
+      <section class="members-group" aria-labelledby="studentsTitle">
+        <div class="members-group-heading">
+          <h3 id="studentsTitle">学生・秘書</h3>
+        </div>
+        <div class="member-list-groups" id="studentGroups" aria-busy="true"></div>
+      </section>
+    </div>
+  </section>
+
+  <section class="members-section members-section-muted" id="former">
+    <div class="container-xl">
+      <div class="members-section-heading">
+        <p class="section-label">Former Members</p>
+        <h2>過去のメンバー</h2>
+      </div>
+
+      <section class="members-group" aria-labelledby="formerFacultyTitle">
+        <div class="members-group-heading">
+          <h3 id="formerFacultyTitle">過去の特任・客員教員</h3>
+        </div>
+        <div class="former-card-grid" id="formerFaculty" aria-busy="true">
+          <p class="members-message">過去のメンバーを読み込み中です。</p>
+        </div>
+      </section>
+
+      <section class="members-group" aria-labelledby="alumniTitle">
+        <div class="members-group-heading">
+          <h3 id="alumniTitle">修了生・過去の研究員</h3>
+        </div>
+        <div class="alumni-list" id="alumniList" aria-busy="true"></div>
+      </section>
+    </div>
+  </section>
+
+  <section class="members-section" id="theses">
+    <div class="container-xl">
+      <div class="members-section-heading members-section-heading-with-note">
+        <div>
+          <p class="section-label">Theses and Graduation Research</p>
+          <h2>学位論文・卒業研究</h2>
+        </div>
+        <p><span aria-hidden="true">*</span> 日本学術振興会特別研究員採択者　<span aria-hidden="true">**</span> 国費留学生</p>
+      </div>
+      <div class="thesis-years" id="thesisYears" aria-busy="true">
+        <p class="members-message">研究テーマを読み込み中です。</p>
+      </div>
+    </div>
+  </section>
+
+  <noscript>
+    <div class="container-xl"><p class="members-message">メンバー一覧を表示するにはJavaScriptを有効にしてください。<a href="https://takayasu-research-lab.com/member.php">従来のメンバーページ</a>でもご覧いただけます。</p></div>
+  </noscript>
+
+</main>

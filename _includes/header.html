@@ -16,6 +16,8 @@
           <li class="nav-item dropdown hover-dropdown">
             <a class="nav-link dropdown-toggle{% if page.nav == 'members' %} active{% endif %}"{% if page.nav == 'members' %} aria-current="page"{% endif %} href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">メンバー</a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{{ '/members.html' | relative_url }}">メンバー一覧</a></li>
+              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="{{ '/misako.html' | relative_url }}">高安 美佐子</a></li>
               <li><a class="dropdown-item" href="{{ '/hideki.html' | relative_url }}">高安 秀樹</a></li>
             </ul>
