@@ -4,6 +4,21 @@ const booksFilters = document.querySelector("#booksFilters");
 const booksCount = document.querySelector("#booksCount");
 const filterLabels = { all: "すべて", misako: "高安 美佐子", hideki: "高安 秀樹" };
 
+function authorFromUrl() {
+  const author = new URLSearchParams(window.location.search).get("author");
+  return Object.hasOwn(filterLabels, author) ? author : "all";
+}
+
+function updateAuthorInUrl(author) {
+  const url = new URL(window.location.href);
+  if (author === "all") {
+    url.searchParams.delete("author");
+  } else {
+    url.searchParams.set("author", author);
+  }
+  window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+}
+
 function parseCsv(text) {
   const rows = [];
   let row = [];
@@ -125,11 +140,14 @@ fetch("data/csv/book.csv")
     const books = parseCsv(text)
       .filter((book) => book.title && book.image)
       .sort((a, b) => Number(b.year) - Number(a.year));
-    applyFilter(books, "all");
+    applyFilter(books, authorFromUrl());
     booksGrid.setAttribute("aria-busy", "false");
     booksFilters.querySelectorAll("button[data-author]").forEach((button) => {
       button.disabled = false;
-      button.addEventListener("click", () => applyFilter(books, button.dataset.author));
+      button.addEventListener("click", () => {
+        applyFilter(books, button.dataset.author);
+        updateAuthorInUrl(button.dataset.author);
+      });
     });
   })
   .catch(() => {
