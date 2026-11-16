@@ -5,6 +5,8 @@ const resultCategories = {
     sources: [
       { file: "pub_EnPeer.csv", type: "en-peer", label: "英語・査読あり" },
       { file: "pub_JpPeer.csv", type: "jp-peer", label: "日本語・査読あり" },
+      { file: "pub_EnPro.csv", type: "proceedings", label: "Proceedings" },
+      { file: "pub_EnNot.csv", type: "en-other", label: "英語・査読なし" },
       { file: "pub_JpNot.csv", type: "jp-other", label: "日本語・査読なし" },
     ],
   },
