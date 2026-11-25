@@ -143,3 +143,31 @@ CSVは、1行目に項目名を持つ標準的なカンマ区切り形式です�
 | `member_paper.csv` / `_en.csv` | `year` 西暦年度、`name` 氏名、`theme` 研究テーマ、`degree` 学位 |
 
 現在のメンバーページは日本語版CSVを読み込みます。英語版CSVは将来の英語ページ用として、同じ構造で管理します。CSVに新しいカテゴリーを追加する場合は、表示側にもカテゴリー名を追加してください。新しい年度の研究テーマは `year` に西暦4桁を入力すると、年度見出しが自動的に追加されます。
+
+## CREST特設サイトの更新
+
+腸内細菌生態系デジタルツインの特設サイトは `projects/crest-microbiome/` にあります。研究室サイトとは独立したヘッダー・フッターと配色を使い、研究室トップから特設サイトへ、特設サイトから研究室トップへ移動できます。
+
+| ページ | ファイル |
+| --- | --- |
+| HOME | `projects/crest-microbiome/index.html` |
+| 研究概要 | `projects/crest-microbiome/research.html` |
+| 研究体制 | `projects/crest-microbiome/team.html` |
+| 研究成果 | `projects/crest-microbiome/results.html` |
+
+NEWSは `projects/crest-microbiome/data/news.csv`、研究成果は `projects/crest-microbiome/data/results.csv` を読み込みます。どちらも1行目の項目名を残し、Excelでは **「CSV UTF-8（コンマ区切り）」** で保存してください。
+
+### NEWS
+
+`date,category,title,url` の4列です。`date` は `2026-11-17` のような日付、`category` は `PROJECT`、`RESEARCH`、`EVENT` などの区分、`title` は見出し、`url` はリンク先です。リンクが不要な場合は `url` を空欄にできます。HOMEには新しい順で最大5件を表示します。
+
+### 研究成果
+
+`date,category,title,description,url` の5列です。`category` には次のいずれかを入力します。
+
+- `publication`：論文
+- `conference`：学会発表
+- `technology`：技術・ソフトウェア
+- `media`：報道・その他
+
+`description` と `url` は空欄でも構いません。研究成果は新しい順に表示され、画面上の種類ボタンで絞り込めます。

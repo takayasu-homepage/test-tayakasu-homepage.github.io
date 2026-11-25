@@ -1,0 +1,36 @@
+---
+layout: crest
+title: RESULTS
+crest_nav: results
+description: JST CREST「腸内細菌生態系デジタル時空間拡張の基盤構築」の研究成果を紹介します。
+---
+<main>
+  <section class="crest-page-hero">
+    <div><p class="crest-eyebrow">RESULTS</p><h1>研究成果を、<br><em>社会へつなぐ。</em></h1></div>
+    <p>本プロジェクトによる論文、学会発表、技術・ソフトウェア、報道などを順次掲載します。</p>
+  </section>
+
+  <section class="crest-content-section crest-results-section" aria-labelledby="results-title" data-crest-results data-results-source="{{ '/projects/crest-microbiome/data/results.csv' | relative_url }}">
+    <div class="crest-section-heading"><p>PROJECT OUTPUTS</p><h2 id="results-title">研究成果一覧</h2></div>
+    <div class="crest-result-filters" role="group" aria-label="研究成果の種類で絞り込む" data-result-filters>
+      <button type="button" class="is-active" data-result-filter="all">すべて</button>
+      <button type="button" data-result-filter="publication">論文</button>
+      <button type="button" data-result-filter="conference">学会発表</button>
+      <button type="button" data-result-filter="technology">技術・ソフトウェア</button>
+      <button type="button" data-result-filter="media">報道・その他</button>
+    </div>
+    <div class="crest-results-list" data-crest-results-list></div>
+    <p class="crest-data-status" data-crest-results-status role="status">研究成果を読み込み中です。</p>
+    <noscript><p class="crest-data-status">研究成果の表示にはJavaScriptを有効にしてください。</p></noscript>
+  </section>
+
+  <section class="crest-related-foundations" aria-labelledby="foundations-title">
+    <div class="crest-section-heading crest-section-heading--light"><p>RESEARCH FOUNDATION</p><h2 id="foundations-title">本研究につながる基盤</h2></div>
+    <p>本CRESTは、先行研究で実現したマウス腸内細菌の高頻度観測と自動採取技術を基盤に、時間発展モデルの開発とヒトへの展開を進めます。</p>
+    <div class="crest-foundation-grid">
+      <article><small>OBSERVATION</small><h3>マウス全糞便の高頻度観測</h3><p>1時間刻みで2週間以上の連続観測を可能にし、生態系の時間変化を捉える基盤を整備しました。</p></article>
+      <article><small>HARDWARE</small><h3>全糞便自動採取装置</h3><p>高頻度時系列データを安定して得るための自動採取装置を開発しました。</p></article>
+      <article><small>MODELING</small><h3>マクロ動態モデル</h3><p>腸内細菌生態系に共通する統計的性質を再現する時間発展モデルを発展させています。</p></article>
+    </div>
+  </section>
+</main>

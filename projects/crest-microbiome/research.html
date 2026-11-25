@@ -1,0 +1,61 @@
+---
+layout: crest
+title: RESEARCH
+crest_nav: research
+description: 腸内細菌生態系の高頻度観測、時間発展統合モデル、デジタルツインによる介入予測について紹介します。
+---
+<main>
+  <section class="crest-page-hero">
+    <div><p class="crest-eyebrow">RESEARCH</p><h1>腸内細菌生態系を、<br><em>時間軸で理解する。</em></h1></div>
+    <p>スナップショットの比較から、連続的な時間発展の理解へ。観測・モデル・予測を一つの循環としてつなぎます。</p>
+  </section>
+
+  <section class="crest-content-section crest-research-question" aria-labelledby="research-question-title">
+    <div class="crest-section-heading"><p>BACKGROUND</p><h2 id="research-question-title">なぜ「時間」が必要なのか</h2></div>
+    <div class="crest-question-grid">
+      <div class="crest-question-copy">
+        <p>従来の腸内細菌研究では、疾患群と健常群などを比較する静的なスナップショットが中心でした。しかし、腸内細菌生態系は絶えず変化しているため、その状態を理解するには、変化の過程を時間に沿って観測する必要があります。</p>
+        <p>本研究では、自動糞便採取装置を用いて、マウスの全糞便を1時間刻みで2週間以上にわたり採取します。得られた高頻度時系列データから、次の時刻の状態や介入による変化を予測するデジタルツインを構築します。</p>
+      </div>
+      <figure class="crest-question-photo">
+        <img src="{{ '/projects/crest-microbiome/assets/images/automatic-feces-collector.jpg' | relative_url }}" width="503" height="480" loading="lazy" alt="マウス糞便自動採取装置">
+        <figcaption>マウス糞便自動採取装置</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="crest-content-section crest-research-cycle" aria-labelledby="research-cycle-title">
+    <div class="crest-section-heading"><p>APPROACH</p><h2 id="research-cycle-title">観測・モデル・予測を循環させる</h2></div>
+    <div class="crest-cycle-grid">
+      <article><span>01</span><h3>OBSERVE</h3><b>高頻度時系列を得る</b><p>菌種数分布、増殖速度、位相情報、機能遺伝子などを観測し、細菌間相互作用、代謝物、宿主免疫に関する情報と結びつけます。</p></article>
+      <article><span>02</span><h3>MODEL</h3><b>時間発展を記述する</b><p>生態系全体の法則を捉えるマクロ動態モデルと、ゲノム情報から代謝反応を表現するミクロ代謝モデルを統合します。</p></article>
+      <article><span>03</span><h3>PREDICT</h3><b>予測を逐次更新する</b><p>データ同化と状態空間予測により、次の観測量と予測量の誤差を小さくしながらデジタルツインを更新します。</p></article>
+      <article><span>04</span><h3>INTERVENE</h3><b>仮想介入を設計する</b><p>食事、睡眠、薬剤、便移植などによる変化を事前にシミュレーションし、介入方法とタイミングを検討します。</p></article>
+    </div>
+  </section>
+
+  <section class="crest-model-section" aria-labelledby="model-title">
+    <div class="crest-section-heading crest-section-heading--light"><p>INTEGRATED MODEL</p><h2 id="model-title">二つの視点を、一つの時間発展モデルへ</h2></div>
+    <div class="crest-model-grid">
+      <article><small>MICRO</small><h3>ミクロ代謝モデル</h3><p>各細菌の全ゲノム情報に含まれる機能遺伝子から、細胞内で起こる化学反応と生成物を定式化します。物質の流れを手がかりに、菌種間の相互作用を推定します。</p><ul><li>ゲノム・機能遺伝子</li><li>代謝反応・代謝物</li><li>菌種間相互作用</li></ul></article>
+      <div class="crest-model-plus" aria-hidden="true">＋</div>
+      <article><small>MACRO</small><h3>マクロ動態モデル</h3><p>菌種の頻度分布、時間的ゆらぎ、成長率など、生態系に共通する統計的な性質を再現します。多変数・空間拡散・非定常変動を考慮して拡張します。</p><ul><li>生態系の統計法則</li><li>時間的ゆらぎ</li><li>時空間でのくりこみ</li></ul></article>
+    </div>
+    <p class="crest-model-conclusion">異なるアプローチを統合することで、観測データが限られる場合にも、定性的・定量的な予測を可能にします。</p>
+  </section>
+
+  <section class="crest-content-section" aria-labelledby="mouse-human-title">
+    <div class="crest-section-heading"><p>FROM MOUSE TO HUMAN</p><h2 id="mouse-human-title">マウスからヒトへ展開する</h2></div>
+    <p class="crest-section-lead">デジタル時空間の基本モデルを共有しつつ、生物学的な違い、観測頻度、個体差に合わせてモデルを調整します。</p>
+    <div class="crest-challenge-grid">
+      <article><span>CHALLENGE 01</span><h3>菌種・解剖学的な違い</h3><p>ゲノム情報と機能遺伝子を利用し、ヒト・マウスそれぞれの代謝反応をモデルに反映します。</p></article>
+      <article><span>CHALLENGE 02</span><h3>観測頻度の違い</h3><p>概日周期と時間くりこみを利用し、1時間刻みのモデルをヒトの観測間隔に合わせます。</p></article>
+      <article><span>CHALLENGE 03</span><h3>個体差と時間ゆらぎ</h3><p>公開コホートと個人の時系列データを活用し、その人に特化した状態へデータ同化します。</p></article>
+    </div>
+  </section>
+
+  <section class="crest-impact-section" aria-labelledby="impact-title">
+    <div><p>FUTURE IMPACT</p><h2 id="impact-title">個別化された介入設計を、<br>医療と健康維持の基盤へ。</h2></div>
+    <div><p>将来、便から得られる腸内細菌の連続データをもとに、一人ひとりのデジタルツインを調整し、食事・薬剤・便移植などの効果と最適なタイミングを事前に検討できる未来を目指します。</p><a href="{{ '/projects/crest-microbiome/team.html' | relative_url }}">研究体制を見る <span aria-hidden="true">→</span></a></div>
+  </section>
+</main>
