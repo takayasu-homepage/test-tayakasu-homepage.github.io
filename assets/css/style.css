@@ -164,6 +164,146 @@ body {
   background: var(--white);
 }
 
+.crest-project-feature {
+  background: #eef5f1;
+}
+
+.crest-project-feature__card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  align-items: center;
+  min-height: 390px;
+  padding: clamp(40px, 6vw, 76px);
+  gap: 6%;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  background: #0e3935;
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(7, 45, 41, 0.2);
+}
+
+.crest-project-feature__card:hover,
+.crest-project-feature__card:focus-visible {
+  color: #fff;
+}
+
+.crest-project-feature__card:focus-visible {
+  outline: 3px solid #a9cb63;
+  outline-offset: 5px;
+}
+
+.crest-project-feature__copy {
+  position: relative;
+  z-index: 2;
+}
+
+.crest-project-feature__label {
+  margin: 0 0 14px;
+  color: #a9cb63;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.crest-project-feature__copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.32;
+  letter-spacing: -0.04em;
+}
+
+.crest-project-feature__copy > p:not(.crest-project-feature__label) {
+  margin: 20px 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.crest-project-feature__copy > span {
+  display: inline-block;
+  margin-top: 30px;
+  color: #a9cb63;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.crest-project-feature__copy i {
+  margin-left: 8px;
+  font-style: normal;
+}
+
+.crest-project-feature__visual {
+  position: relative;
+  min-height: 260px;
+  border: 1px solid rgba(169, 203, 99, 0.32);
+  border-radius: 50%;
+}
+
+.crest-project-feature__visual::before,
+.crest-project-feature__visual::after {
+  position: absolute;
+  inset: 14%;
+  content: "";
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  transform: rotate(28deg) scaleX(0.68);
+}
+
+.crest-project-feature__visual::after {
+  transform: rotate(-36deg) scaleX(0.68);
+}
+
+.crest-project-feature__visual strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 132px;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.25rem;
+  line-height: 1.05;
+  background: #0d746d;
+  border-radius: 50%;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+  transform: translate(-50%, -50%);
+}
+
+.crest-project-feature__visual i {
+  position: absolute;
+  z-index: 1;
+  width: 18px;
+  height: 11px;
+  background: #a9cb63;
+  border-radius: 999px;
+  box-shadow: 0 0 0 6px rgba(169, 203, 99, 0.12);
+}
+
+.crest-project-feature__visual i:nth-child(1) {
+  top: 12%;
+  left: 24%;
+  transform: rotate(22deg);
+}
+
+.crest-project-feature__visual i:nth-child(2) {
+  top: 30%;
+  right: 10%;
+  transform: rotate(-32deg);
+}
+
+.crest-project-feature__visual i:nth-child(3) {
+  bottom: 11%;
+  left: 18%;
+  transform: rotate(-18deg);
+}
+
 .intro-image {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -1675,6 +1815,14 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .crest-project-feature__card {
+    grid-template-columns: 1fr;
+  }
+
+  .crest-project-feature__visual {
+    min-height: 240px;
+  }
+
   .book-list,
   .external-links {
     grid-template-columns: 1fr;
@@ -1777,5 +1925,13 @@ body {
   .profile-block-heading {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .crest-project-feature__card {
+    padding: 30px 24px;
+  }
+
+  .crest-project-feature__visual {
+    min-height: 210px;
   }
 }

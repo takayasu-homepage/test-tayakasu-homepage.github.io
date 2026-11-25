@@ -1,0 +1,17 @@
+<header class="crest-header" data-crest-header>
+  <a class="crest-brand" href="{{ '/projects/crest-microbiome/' | relative_url }}" aria-label="CREST腸内細菌研究プロジェクト HOME">
+    <span class="crest-brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+    <span class="crest-brand-copy"><b>CREST GUT MICROBIOME</b><small>腸内細菌生態系デジタルツイン</small></span>
+  </a>
+  <button class="crest-menu-button" type="button" aria-expanded="false" aria-controls="crest-navigation" data-crest-menu>
+    <span></span><span></span><span></span><span class="visually-hidden">メニューを開く</span>
+  </button>
+  <nav class="crest-navigation" id="crest-navigation" aria-label="特設サイト内メニュー" data-crest-navigation>
+    <a{% if page.crest_nav == 'home' %} class="is-current" aria-current="page"{% endif %} href="{{ '/projects/crest-microbiome/' | relative_url }}">HOME</a>
+    <a href="{{ '/projects/crest-microbiome/' | relative_url }}#news">NEWS</a>
+    <a{% if page.crest_nav == 'research' %} class="is-current" aria-current="page"{% endif %} href="{{ '/projects/crest-microbiome/research.html' | relative_url }}">RESEARCH</a>
+    <a{% if page.crest_nav == 'team' %} class="is-current" aria-current="page"{% endif %} href="{{ '/projects/crest-microbiome/team.html' | relative_url }}">TEAM</a>
+    <a{% if page.crest_nav == 'results' %} class="is-current" aria-current="page"{% endif %} href="{{ '/projects/crest-microbiome/results.html' | relative_url }}">RESULTS</a>
+  </nav>
+  <a class="crest-lab-link" href="{{ '/' | relative_url }}">高安研究室へ <span aria-hidden="true">↗</span></a>
+</header>
